@@ -1,0 +1,130 @@
+﻿// Die Größe der Umrandung eines Minibildes
+@thumbSize: 210px;
+
+// Die erzwungene Farbe für alle Texte, auch die der Verweise
+@textColor: black;
+
+// Die allgemeine Hintergrundfarbe
+@background: #eeffff;
+
+// Schatten sind in der gesamten Galerie immer identisch
+@shadow: #888888;
+
+// Die Farbe für einen ausgeblendeten Verweis
+@disabledPageColor: #c0c0c0;
+
+// Die Hintergrundfarbe für die Seitenauswahl
+@pageLinkBackgroundColor: #f0f0f0;
+
+// Die Farbe des Hintergrunds
+body
+{
+    background-color: @background;
+}
+
+// Es wird die Auswahl gezeigt
+.thumbnailView
+{
+    overflow: hidden;
+}
+
+// Es wird ein Bild im Detail angezeigt
+.detailView
+{
+}
+
+// Unsere Verweise zeigen keine Unterstreichung et al
+a
+{
+    text-decoration: none;
+}
+
+// Eine Liste von Minibildern
+.thumbnailRow
+{
+    overflow: hidden;
+    height: @thumbSize;
+}
+
+// Der Bereich zur Anzeige der Seitenauswahl auf einer Übersichtsseite
+.detailNavigation
+{
+    padding-bottom: 10px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+// Die Umfassung für das Blättern der Seiten
+.pageLinks
+{
+    height: 1em;
+}
+
+// Die einzelnen Seiten zum Blättern in der Übersicht
+.pageLink
+{
+    background-color: @pageLinkBackgroundColor;
+    box-shadow: 2px 2px 1px @shadow;
+    padding-right: 10px;
+    border-radius: 50%;
+    padding-left: 10px;
+    margin-left: 4px;
+    height: 1em;
+    width: 1em;
+}
+
+// Positiert den Text in der Mitte der Zeile
+.center
+{
+    text-align: center;
+    display: block;
+    clear: left;
+}
+
+// Der normale Text in einem Navigationsbereich
+.navigationText
+{
+    color: @textColor;
+}
+
+// Ein Text in einem Navigationsbereich zu einem deaktivierten Verweis
+.disabledPageLink
+{
+    color: @disabledPageColor;
+}
+
+// Die Umfassung für ein Minibild
+.thumbnail
+{
+    display: inline-block;
+    position: relative;
+    width: @thumbSize;
+    height: @thumbSize;
+    margin: 2px;
+}
+
+// Ein Minibild zentriert in seiner Umfassung
+.thumbnailImage
+{
+    box-shadow: 3px 3px 2px @shadow;
+    position: absolute;
+    border: none;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: auto;
+}
+
+// Der umfassende Bereich für die Anzeige des gesamten Bildes
+.fullImageContainer
+{
+    text-align: center;
+}
+
+// Das Detailbild zentriert in der Umfassung
+.fullImage
+{
+    box-shadow: 6px 6px 3px @shadow;
+}

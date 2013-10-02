@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foto Galerie Nico", "Foto Galerie Nico.csproj", "{3CBEF22A-F1B7-4196-91CD-B04A637E2956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galerie Creator", "Creator\Galerie Creator.csproj", "{EEB955E3-1813-4418-B085-7458BE05E1EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CBEF22A-F1B7-4196-91CD-B04A637E2956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CBEF22A-F1B7-4196-91CD-B04A637E2956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CBEF22A-F1B7-4196-91CD-B04A637E2956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CBEF22A-F1B7-4196-91CD-B04A637E2956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB955E3-1813-4418-B085-7458BE05E1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB955E3-1813-4418-B085-7458BE05E1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB955E3-1813-4418-B085-7458BE05E1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB955E3-1813-4418-B085-7458BE05E1EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
