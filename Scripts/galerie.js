@@ -65,9 +65,10 @@ var JMSFotoGalerie;
             // Index auslesen
             var index = +hash.substr(6);
 
+            // Je nach Wunsch zeigen wir eine Übersicht oder ein einzelnes Bild an
             if (hash.indexOf('#index') == 0)
                 this.switchToThumbnails(index);
-else if (hash.indexOf('#image') == 0)
+            else if (hash.indexOf('#image') == 0)
                 this.showFullImage(index);
         };
 
@@ -109,6 +110,7 @@ else if (hash.indexOf('#image') == 0)
             // Navigation einrichten, wenn nötig
             var pages = this.createPages();
             if (pages != null) {
+                // Korrektur für den Fall, dass wir nun weniger Seiten anzeigen
                 if (page >= pages.length)
                     page = 0;
 
@@ -168,6 +170,7 @@ else if (hash.indexOf('#image') == 0)
 
                 cells[column] = cell;
 
+                // Füllen ist nur nötig, wenn auch ein Bild existiert
                 if (startIndex < 0)
                     continue;
                 if (startIndex >= images.length)
@@ -211,3 +214,4 @@ else if (hash.indexOf('#image') == 0)
 $(function () {
     JMSFotoGalerie.Initialize();
 });
+//# sourceMappingURL=galerie.js.map

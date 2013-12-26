@@ -1,66 +1,79 @@
 ﻿body {
-  background-color: #eeffff;
+    background-color: #eeffff;
 }
+
 .thumbnailView {
-  overflow: hidden;
+    overflow: hidden;
 }
+
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 .thumbnailRow {
-  overflow: hidden;
-  height: 210px;
+    overflow: hidden;
+    height: 210px;
 }
+
 .detailNavigation {
-  padding-bottom: 10px;
-  padding-top: 4px;
-  font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 4px;
+    font-weight: bold;
 }
+
 .pageLinks {
-  height: 1em;
+    height: 1em;
 }
+
 .pageLink {
-  background-color: #f0f0f0;
-  box-shadow: 2px 2px 1px #888888;
-  padding-right: 10px;
-  border-radius: 50%;
-  padding-left: 10px;
-  margin-left: 4px;
-  height: 1em;
-  width: 1em;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 1px #888888;
+    padding-right: 10px;
+    border-radius: 50%;
+    padding-left: 10px;
+    margin-left: 4px;
+    height: 1em;
+    width: 1em;
 }
+
 .center {
-  text-align: center;
-  display: block;
-  clear: left;
+    text-align: center;
+    display: block;
+    clear: left;
 }
+
 .navigationText {
-  color: #000000;
+    color: #000000;
 }
+
 .disabledPageLink {
-  color: #c0c0c0;
+    color: #c0c0c0;
 }
+
 .thumbnail {
-  display: inline-block;
-  position: relative;
-  width: 210px;
-  height: 210px;
-  margin: 2px;
+    display: inline-block;
+    position: relative;
+    width: 210px;
+    height: 210px;
+    margin: 2px;
 }
+
 .thumbnailImage {
-  box-shadow: 3px 3px 2px #888888;
-  position: absolute;
-  border: none;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
-  display: block;
-  margin: auto;
+    box-shadow: 3px 3px 2px #888888;
+    position: absolute;
+    border: none;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: auto;
 }
+
 .fullImageContainer {
-  text-align: center;
+    text-align: center;
 }
+
 .fullImage {
-  box-shadow: 6px 6px 3px #888888;
+    box-shadow: 6px 6px 3px #888888;
 }
