@@ -4,9 +4,7 @@ module JMSFotoGalerie {
 
     export function Initialize(): void {
         // Theoretisch erlauben wir auch mehrere Galieren auf einer Seite
-        $('.galerie').each(function (index: any, galerie: Element): void {
-            new Galerie(galerie);
-        });
+        $('.galerie').each((index, galerie) => new Galerie(galerie));
     }
 
     // So wird die Konfiguration im Bildverzeichnis ablegt
@@ -94,16 +92,12 @@ module JMSFotoGalerie {
                 dataType: 'json'
             });
 
-            var me = this;
-
-            request.done(function (data: Konfiguration): void {
+            request.done((data: Konfiguration) => {
                 // Konfiguration merken
-                me.images = data.images;
+                this.images = data.images;
 
                 // Wir arbeiten vollständig mit dem Anker
-                window.onhashchange = window.onresize = function (ev: Event): void {
-                    me.navigate();
-                }
+                window.onhashchange = window.onresize = (ev: Event) => this.navigate();
 
                 // Überschrift setzen
                 $('.galerieTitle').text(data.title);
@@ -112,7 +106,7 @@ module JMSFotoGalerie {
                 $(document).attr("title", data.title);
 
                 // Erste Seite der Übersicht anzeigen
-                me.navigate();
+                this.navigate();
             });
         }
 
@@ -226,6 +220,4 @@ module JMSFotoGalerie {
 }
 
 // Globale Initialisierungen
-$(function (): void {
-    JMSFotoGalerie.Initialize();
-})
+$(() => JMSFotoGalerie.Initialize());

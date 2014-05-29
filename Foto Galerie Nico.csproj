@@ -73,7 +73,6 @@
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="pics\galerie.txt" />
-    <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <TypeScriptCompile Include="Scripts\galerie.ts" />
     <Content Include="pics\pic1.jpg" />
     <Content Include="pics\pic2.jpg" />
@@ -85,16 +84,17 @@
     <Content Include="scripts\galerie.js.map">
       <DependentUpon>galerie.ts</DependentUpon>
     </Content>
-    <Content Include="Scripts\jquery-2.0.3.js" />
-    <Content Include="Scripts\jquery-2.0.3.min.js" />
+    <None Include="scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="scripts\jquery-2.1.1.js" />
+    <Content Include="scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\typings\jquery\jquery.d.ts" />
     <Content Include="Web.config" />
-    <Content Include="Scripts\jquery-2.0.3.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="scripts\jquery-2.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

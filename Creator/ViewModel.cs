@@ -175,23 +175,23 @@ namespace Galerie_Creator
                 var deltaPath = Path.Combine( deltaDir, fileName );
 
                 // No such file
-                if (!File.Exists( refPath ))
-                    return;
+                if (File.Exists( refPath ))
+                {
+                    // Load the old stuff
+                    var refData = File.ReadAllBytes( refPath );
 
-                // Load the old stuff
-                var refData = File.ReadAllBytes( refPath );
+                    // Compare
+                    if (refData.Length == fileContents.Length)
+                        if (Enumerable.Range( 0, refData.Length ).All( i => refData[i] == fileContents[i] ))
+                        {
+                            // May want to clean up
+                            if (File.Exists( deltaPath ))
+                                File.Delete( deltaPath );
 
-                // Compare
-                if (refData.Length == fileContents.Length)
-                    if (Enumerable.Range( 0, refData.Length ).All( i => refData[i] == fileContents[i] ))
-                    {
-                        // May want to clean up
-                        if (File.Exists( deltaPath ))
-                            File.Delete( deltaPath );
-
-                        // Skip
-                        return;
-                    }
+                            // Skip
+                            return;
+                        }
+                }
 
                 // Create path and store
                 Directory.CreateDirectory( deltaDir );
@@ -459,7 +459,7 @@ namespace Galerie_Creator
             var worker = (BackgroundWorker) sender;
 
             // Copy app
-            context.WriteScript( "jquery-2.0.3.min.js", Properties.Files.jQuery );
+            context.WriteScript( "jquery-2.1.1.min.js", Properties.Files.jQuery );
             context.WriteScript( "galerie.js", Properties.Files.ScriptCode );
             context.WriteStyle( "galerie.css", Properties.Files.StyleSheet );
             context.WritePage( "index.html", Properties.Files.HomePage );
