@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foto Galerie Nico", "Foto Galerie Nico.csproj", "{3CBEF22A-F1B7-4196-91CD-B04A637E2956}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galerie Creator", "Creator\Galerie Creator.csproj", "{EEB955E3-1813-4418-B085-7458BE05E1EB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3CBEF22A-F1B7-4196-91CD-B04A637E2956} = {3CBEF22A-F1B7-4196-91CD-B04A637E2956}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

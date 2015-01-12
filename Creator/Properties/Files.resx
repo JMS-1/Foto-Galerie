@@ -121,13 +121,13 @@
   <data name="HomePage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\index.html;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="jQuery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\scripts\jquery-2.1.1.min.js;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="ScriptCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\scripts\galerie.js;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="StyleSheet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\content\galerie.css;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jQuery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\scripts\jquery-2.1.3.min.js;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

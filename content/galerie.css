@@ -1,4 +1,4 @@
-body {
+﻿body {
   background-color: #eeffff;
 }
 .thumbnailView {
@@ -35,7 +35,7 @@ a {
   clear: left;
 }
 .navigationText {
-  color: #000000;
+  color: black;
 }
 .disabledPageLink {
   color: #c0c0c0;
@@ -64,3 +64,4 @@ a {
 .fullImage {
   box-shadow: 6px 6px 3px #888888;
 }
+/*# sourceMappingURL=galerie.css.map */

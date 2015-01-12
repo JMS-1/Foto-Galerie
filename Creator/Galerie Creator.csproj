@@ -114,6 +114,10 @@
     <None Include="..\..\dvbnet4.snk">
       <Link>dvbnet4.snk</Link>
     </None>
+    <None Include="..\content\galerie.css.map">
+      <Link>Resources\galerie.css.map</Link>
+      <DependentUpon>galerie.css</DependentUpon>
+    </None>
     <None Include="bin\GalerieCreator.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -134,8 +138,8 @@
     <Content Include="..\Scripts\galerie.js">
       <Link>Resources\galerie.js</Link>
     </Content>
-    <Content Include="..\Scripts\jquery-2.1.1.min.js">
-      <Link>Resources\jquery-2.1.1.min.js</Link>
+    <Content Include="..\Scripts\jquery-2.1.3.min.js">
+      <Link>Resources\jquery-2.1.3.min.js</Link>
     </Content>
     <Content Include="bin\GalerieCreator.exe" />
     <Resource Include="app.ico" />
