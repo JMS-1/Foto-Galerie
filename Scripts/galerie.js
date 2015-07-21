@@ -99,6 +99,7 @@ var JMSFotoGalerie;
             }
             var startIndex = page * this.pageSize();
             var rows = this.rows();
+            // Bildzellenmatrix vorbereiten
             for (var row = 0; row < rows; row++) {
                 var cells = this.createThumbs(startIndex);
                 this.element.append(cells);
@@ -160,4 +161,3 @@ var JMSFotoGalerie;
 })(JMSFotoGalerie || (JMSFotoGalerie = {}));
 // Globale Initialisierungen
 $(function () { return JMSFotoGalerie.Initialize(); });
-//# sourceMappingURL=galerie.js.map
